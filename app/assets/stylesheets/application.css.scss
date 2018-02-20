@@ -17,40 +17,35 @@
 @import 'bootstrap-sprockets';
 @import 'bootstrap';
 
+
+//Typography Styles
 h1, h2, h3 {
   font-family: 'Open Sans', sans-serif;
 }
 
+//Background Gradient
 .navbar, .home-callout {
   //gradient provided by @_igosh at UiGradients.com
   background: #EFEFBB;  /* fallback for old browsers */
   background: -webkit-linear-gradient(to right, #D4D3DD, #EFEFBB);  /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to right, #D4D3DD, #EFEFBB); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
+
+//Nav Styles
 .navbar {
   border: none;
 }
 
-.navbar-default .navbar-brand {
-  color: white;
-}
-
-
+.navbar-default .navbar-brand,
 .navbar-defaultv .navbar-nav > li > a {
   color: grey;
+  &:hover {
+    color: grey;
+    opacity: 0.75;
+  }
 }
 
-.navbar-default .navbar-brand:hover {
-  color: white;
-  opacity: 0.75;
-}
-
-
-.navbar-defaultv .navbar-nav > li > a:hover {
-  color: grey;
-  opacity: 0.75;
-}
-
+// Home Page Styles
 .home-callout {
   color: grey;
   margin-top: -50px;
