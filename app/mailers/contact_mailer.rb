@@ -1,4 +1,4 @@
-class ContactMailer < AcionMailer::Base
+class ContactMailer < ActionMailer::Base
   default to: 'danielmickleburgh@hotmail.co.uk'
   
   def contact_email(name, email, body)
